@@ -8,3 +8,4 @@ busca através de arquivos.
 Os arquivos com input e outputs podem ser encontrados na pasta de dados do projeto, juntamente com 3 arquivos referentes a base de dados das 3 lojas. A cada
 busca realizada, os arquivos são atualizados com a busca feita, seu input, output e a data e hora na qual foi feita a busca para possivel consulta.
 
+Os arquivos de dados das 3 lojas estão abastecidos com 10 modelos de carros e datas dos meses de outubro e novembro.

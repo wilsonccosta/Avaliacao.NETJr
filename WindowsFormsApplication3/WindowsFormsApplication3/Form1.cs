@@ -33,6 +33,7 @@ namespace WindowsFormsApplication3
 
             /*Declaração com inicialização*/
             Boolean ERRO_DATA = false;
+            Boolean ERRO_DATA_ANTES = false;
             int QUANTIDADE_DE_PASSAGEIROS = 1;
             int diasSemana = 0;
             int diasFimdeSemana = 0;
@@ -162,6 +163,12 @@ namespace WindowsFormsApplication3
                 QUANTIDADE_DE_PASSAGEIROS = Convert.ToInt16(comboBox1.Text);
             }
             CHECK_PREMIUN = checkBox1.Checked;
+
+            /* Verifica se a data de retirada é valida(não é menor que o dia atual)*/
+            if ((DATA_INICIAL.Subtract(DateTime.Today).Days)<0)
+            {
+                ERRO_DATA_ANTES = true;
+            }
             
             /*Checka se o usuário é premiun ou não e insere o resultado em
              TIPO_CARRO como Premiun ou Normal*/
@@ -299,7 +306,7 @@ namespace WindowsFormsApplication3
             }
 
             /*Preparando strings de input e output, assim como as datas buscadas */
-            if (ERRO_DATA == false) { 
+            if ((ERRO_DATA == false) && (ERRO_DATA_ANTES == false)) { 
                 inputTXT = inputTXT.Remove(inputTXT.Length -1);
                 datasBuscadas = datasBuscadas.Remove(datasBuscadas.Length - 1);
                 outputTXT = CARRO_DISPONIVEL + ":" + LOCADORA;
@@ -339,9 +346,17 @@ namespace WindowsFormsApplication3
             }
             else
             {
-                /* Retornando Erro de data*/
-                label8.Text = "ERRO: DATA DE RETIRADA DEPOIS DE DATA DE DEVOLUÇÃO!";
-                label9.Text = "";
+                if (ERRO_DATA) {
+                    /* Retornando Erro de data*/
+                    label8.Text = "ERRO: DATA DE RETIRADA DEPOIS DE DATA DE DEVOLUÇÃO!";
+                    label9.Text = "";
+                }
+                if (ERRO_DATA_ANTES)
+                {
+                    /* Retornando Erro de data*/
+                    label8.Text = "ERRO: DATA DE RETIRADA ANTERIOR A HOJE!";
+                    label9.Text = "";
+                }
             }
 
 
