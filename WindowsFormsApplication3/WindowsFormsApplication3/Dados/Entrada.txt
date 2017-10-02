@@ -1,0 +1,6 @@
+[01/10/2017 20:53:14] Normal:2:1Out2017(dom),2Out2017(seg),3Out2017(ter),4Out2017(qua),5Out2017(qui),6Out2017(sex),7Out2017(sab),8Out2017(dom),9Out2017(seg),10Out2017(ter)
+[01/10/2017 21:00:22] Normal:3:3Out2017(ter),4Out2017(qua),5Out2017(qui),6Out2017(sex),7Out2017(sab),8Out2017(dom),9Out2017(seg),10Out2017(ter),11Out2017(qua)
+[01/10/2017 21:00:28] Normal:2:3Out2017(ter),4Out2017(qua),5Out2017(qui),6Out2017(sex),7Out2017(sab),8Out2017(dom),9Out2017(seg),10Out2017(ter),11Out2017(qua)
+[01/10/2017 21:00:33] Premiun:2:3Out2017(ter),4Out2017(qua),5Out2017(qui),6Out2017(sex),7Out2017(sab),8Out2017(dom),9Out2017(seg),10Out2017(ter),11Out2017(qua)
+[01/10/2017 21:07:09] Normal:1:1Out2017(dom),2Out2017(seg)
+[01/10/2017 21:07:48] Premiun:4:2Out2017(seg),3Out2017(ter),4Out2017(qua),5Out2017(qui),6Out2017(sex),7Out2017(sab)
