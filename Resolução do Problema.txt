@@ -1,0 +1,10 @@
+O problema apresentado consiste na busca do carro com melhor preço para o cliente com base na quantidade de passageiros e dias que deseja alocar o carro.
+
+Como não foi solicitado o desenvolvimento de um banco de dados e foi descrito minuciosamente o sistema de input e output, assim como os dados que deviam estar
+contidos nos mesmos, optei por desenvolver um sistema com armazenamento e busca de dados via arquivos, levnado em consideração que tal desenvolvimento é 
+facilmente adaptado para uma consulta em um banco de dados implementado, já a implemtação com busca direta em banco de dados não seria facilmente adaptada para
+busca através de arquivos.
+
+Os arquivos com input e outputs podem ser encontrados na pasta de dados do projeto, juntamente com 3 arquivos referentes a base de dados das 3 lojas. A cada
+busca realizada, os arquivos são atualizados com a busca feita, seu input, output e a data e hora na qual foi feita a busca para possivel consulta.
+
