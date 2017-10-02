@@ -307,9 +307,8 @@ namespace WindowsFormsApplication3
 
             /*Preparando strings de input e output, assim como as datas buscadas */
             if ((ERRO_DATA == false) && (ERRO_DATA_ANTES == false)) { 
-                inputTXT = inputTXT.Remove(inputTXT.Length -1);
-                datasBuscadas = datasBuscadas.Remove(datasBuscadas.Length - 1);
-                outputTXT = CARRO_DISPONIVEL + ":" + LOCADORA;
+
+                datasBuscadas = datasBuscadas.Remove(datasBuscadas.Length - 1);               
 
 
                 /*Sistema de busca na base de dados(txt) com base nos calculos de valor e passageiros obtido*/
@@ -327,6 +326,9 @@ namespace WindowsFormsApplication3
                 }
                 arquivoDados.Close();
 
+                /*Preparando dados para inserir no Output e Input*/
+                inputTXT = inputTXT.Remove(inputTXT.Length - 1);
+                outputTXT = CARRO_DISPONIVEL + ":" + LOCADORA;
 
                 /* Escrevendo entrada em um arquivo que registra as entradas feitas*/
                 StreamWriter escreverEntrada = new StreamWriter(arquivoEntrada, true, Encoding.ASCII);
