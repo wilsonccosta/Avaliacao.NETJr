@@ -9,3 +9,5 @@ Os arquivos com input e outputs podem ser encontrados na pasta de dados do proje
 busca realizada, os arquivos são atualizados com a busca feita, seu input, output e a data e hora na qual foi feita a busca para possivel consulta.
 
 Os arquivos de dados das 3 lojas estão abastecidos com 10 modelos de carros e datas dos meses de outubro e novembro.
+
+Alguns testes podem ser encontrados em Entrada.txt e Saida.Txt que estão na pasta dados.
